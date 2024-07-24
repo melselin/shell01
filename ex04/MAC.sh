@@ -1,1 +1,1 @@
-ifconfig | grep -E "ether|HWaddr" | awk '{print $2}'
+ifconfig | awk '/ether/ {print $2}'
